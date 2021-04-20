@@ -1,0 +1,5 @@
+*.exe
+.cph/
+.html
+.vscode/
+tempCodeRunnerFile.cpp

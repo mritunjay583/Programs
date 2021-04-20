@@ -1,0 +1,39 @@
+Now lets discuss the efficency of Quick select algorithm
+or can say Quick partition algorithm
+
+-->> its average case and best case complexity is O(n)
+-->> but it can peform worst with runtime O(n*n)
+    
+    ->reason
+
+    --> it fails, because of wrong selection of pivot element
+        so always try to choose pivot randomly .
+        the probablity of getting bad pivot will be very low if you 
+        choose pivot randomly and your algorithm will run in best/average
+        case
+    
+    -->> what is wrong pivot ???
+        -->>if the choosen pivot is smallest/largest of the list elements
+    
+    SO,
+    -->> what is good pivot ???
+        -->>if the choosen pivot is median of the list elements
+
+-->> but your problem is not resolved yet.
+    -->>Quick select will also perform worst even you do random selection of 
+        pivot .
+
+        REASON
+
+    -->>if number of distinct elements
+        in list is very less as compared to size of the list
+    
+        SOLUTION
+    -->the solution for this is to use 3- way - partition.
+
+-------------------------------------------------------------------
+    so overall best Quick partition algorithm will be
+
+3 - way - partition  +  random pivot selection
+
+

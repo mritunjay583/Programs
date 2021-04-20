@@ -1,0 +1,65 @@
+Longest path in DAG
+----------------------------------------------------
+
+Following is complete algorithm for finding longest distances.
+1) Initialize dist[] = {NINF, NINF, ….} and dist[s] = 0 where s is the source vertex. Here NINF means negative infinite.
+2) Create a toplogical order of all vertices.
+3) Do following for every vertex u in topological order.
+………..Do following for every adjacent vertex v of u
+………………if (dist[v] < dist[u] + weight(u, v))   
+………………………dist[v] = dist[u] + weight(u, v)
+
+
+complexity of this algorithm is O(V+E)
+
+
+Shortest path in DAG
+--------------------------------------------------------
+Following is complete algorithm for finding shortest distances.
+1) Initialize dist[] = {INF, INF, ….} and dist[s] = 0 where s is the source vertex.
+2) Create a toplogical order of all vertices.
+3) Do following for every vertex u in topological order.
+………..Do following for every adjacent vertex v of u
+………………if (dist[v] > dist[u] + weight(u, v))
+………………………dist[v] = dist[u] + weight(u, v)
+
+
+
+-----------------------------------------------------------------------------------
+But if there is cycles in graph (directed/undirected) we can use shortest path algorithms
+
+1. Dijkstra’s shortest path algorithm (it fails if there is negative weight),
+2. BellmanFord Algorithm   (fails if there is negative weight cycles).
+3. Floyd Warshalls
+
+
+Shortest Path in unweighted graph
+-----------------------------------------------------------------------------------
+--> One solution is to solve in O(VE) time using Bellman–Ford.
+
+--> If there are no negative weight cycles, then we can solve in O(E + VLogV) time using Dijkstra’s algorithm.
+
+--> Since the graph is unweighted, we can solve this problem in O(V + E) time. 
+    -> The idea is to use a modified version of Breadth-first search in which we keep storing the 
+    predecessor of a given vertex while doing the breadth first search. This algorithm will work 
+    even when negative weight cycles are present in the graph.
+
+
+
+
+topological Sorting
+--------------------------------------------------------------------------------------
+-->vertices in order of their decreasing departure time which is our desired 
+Topological Order of Vertices.
+
+
+
+
+--------------------------------------------------------------------------
+MST
+--------------------------------------------------------------------------
+Prim’s Minimum Spanning Tree (MST) | 
+-------------------------------------------------->>>>>>>>>>>>>>>>>>>>>>>>>
+matrix representation is O(V^2). In this post, O(ELogV) algorithm for adjacency list 
+
+

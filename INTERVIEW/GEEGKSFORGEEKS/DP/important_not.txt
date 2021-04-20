@@ -1,0 +1,25 @@
+--> stair case when order does not matter and coin change are same problem
+  --> but solving staircase problem in which order doesnot matter
+        will give segmentation fault when number of stairs goes to 10^6
+
+    
+
+--> 0/1 knapsack problem and subset sum are the same problem   
+    you can solve both problem in same ways
+    differnce is you have given extra weight array
+    and in subset sum you have given weight array implicitly in form of
+    array elemnts
+
+    -->> in 0/1 knapsack weight is constraint
+    and in subset sum given sum is constraint
+
+--> coin change and 0/1 knapsack can be same problem but in 0/1
+    knapsack you can take any elemnt atmost most but in coinchange
+    you can consider any element any number of time
+
+
+-->> 0/1 knapsack and cutting rod problem are same 
+   -->> the only differnce is you can take any item any number of time
+   in cutting rod and your final weight must be W ;
+   but in 0/1 knapsack you can take any element atmost once and and
+   find weight <=w , it  is not manditory that weight must be eual to W;
